@@ -1,0 +1,16 @@
+{
+  "name": "victor-sotero-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website and CV for Victor Sotero - Senior Data Engineer",
+  "scripts": {
+    "dev": "hugo server -D --disableFastRender",
+    "build": "hugo --gc --minify",
+    "format": "prettier --write \"layouts/**/*.html\" \"static/**/*.{css,js}\"",
+    "format:check": "prettier --check \"layouts/**/*.html\" \"static/**/*.{css,js}\""
+  },
+  "author": "Victor Sotero",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.2.0"
+  }
+}

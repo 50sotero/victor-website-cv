@@ -1,0 +1,30 @@
+baseURL = "https://victorsotero.com/"
+languageCode = "en"
+title = "Victor Sotero | Senior Data Engineer"
+
+[params]
+  description = "Senior Data Engineer specializing in Big Data, Databricks, AWS, PySpark, and Data Lakehouse architectures"
+  author = "Victor Sotero"
+  
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "CV"
+    url = "/cv/"
+    weight = 2
+  [[menu.main]]
+    name = "Contact"
+    url = "/#contact"
+    weight = 3

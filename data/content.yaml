@@ -1,0 +1,298 @@
+personal:
+  name: "Victor Sotero"
+  title: "Senior Data Engineer"
+  tagline: "Big Data | AI | Python | SQL | AWS | Spark | Data Lakehouse"
+  location: "Gothenburg, Sweden"
+  email: "victorvcdb@gmail.com"
+  phone: "+460760029014"
+  linkedin: "https://www.linkedin.com/in/victor-sotero/"
+  github: "https://github.com/victorsotero"
+
+summary: |
+  As a seasoned Data Engineer with over four years of experience in developing scalable and reliable big data solutions, I have relocated to Gothenburg, Sweden, to join Software by Quokka. This high-end software engineering firm offers services to leading enterprises in sectors such as automotive, telecom, MedTech, and FinTech.
+
+  Previously, at Globant, I played a pivotal role in designing, implementing and optimizing data workflows for major clients, leading to improved data processing efficiency and reduced operational costs. My work supported critical business functions and enabled data-driven decision-making in large-scale enterprises.
+
+  Throughout my career, I have handled data for millions of users and processed billions of transactions. With a strong foundation in Python and SQL, coupled with hands-on experience in data modeling, ETL processes, and cluster management, I consistently deliver high-quality, scalable solutions.
+
+skills:
+  - category: "Data Processing"
+    items:
+      - name: "PySpark"
+        level: 95
+      - name: "Databricks"
+        level: 90
+      - name: "Delta Lake"
+        level: 90
+      - name: "Apache Spark"
+        level: 90
+      - name: "Hadoop"
+        level: 75
+      - name: "Hive"
+        level: 80
+
+  - category: "Cloud & Infrastructure"
+    items:
+      - name: "AWS (EMR, S3, Redshift)"
+        level: 90
+      - name: "Airflow"
+        level: 85
+      - name: "Docker"
+        level: 75
+      - name: "Kafka"
+        level: 80
+
+  - category: "Programming"
+    items:
+      - name: "Python"
+        level: 95
+      - name: "SQL"
+        level: 95
+      - name: "TypeScript"
+        level: 70
+      - name: "Node.js"
+        level: 70
+
+  - category: "Data Engineering"
+    items:
+      - name: "ETL/ELT"
+        level: 95
+      - name: "Change Data Capture"
+        level: 90
+      - name: "Data Modeling"
+        level: 85
+      - name: "Data Lakehouse"
+        level: 90
+
+experience:
+  - company: "Zeekr Technology Europe"
+    role: "Senior Data Engineer"
+    via: "through Software by Quokka"
+    location: "Gothenburg, Sweden"
+    start_date: "April 2025"
+    end_date: "Present"
+    description: |
+      Zeekr is Geely's premium EV brand expanding across Europe, with EU HQ in Amsterdam and an R&D/design hub at the Uni3 campus in Gothenburg.
+    highlights:
+      - "Building an EU-integrated data platform uniting scattered sources into a single Databricks + Unity Catalog layer"
+      - "Aligning customer-data flows with the EU Data Act compliance requirements"
+      - "Designing and orchestrating pipelines to ingest, canonicalize, govern, and serve data back to users and markets"
+      - "Integrating data resources across European operations"
+      - "Running PoCs and stakeholder demos that are maturing into production solutions"
+    tech_stack:
+      - "PySpark"
+      - "Delta Lake"
+      - "Databricks"
+      - "AWS"
+      - "Redshift"
+      - "MySQL"
+      - "NoSQL"
+
+  - company: "Software by Quokka"
+    role: "Senior Data Engineer"
+    location: "Greater Gothenburg Metropolitan Area"
+    start_date: "January 2025"
+    end_date: "Present"
+    description: |
+      High-end software engineering firm offering services to leading enterprises in automotive, telecom, MedTech, and FinTech sectors.
+    highlights:
+      - "Developed innovative HR solutions including Employee Portal and User Management Service"
+      - "Created KPI dashboard for employee metrics with integrated feedback services"
+      - "Built standardized CV generator to streamline employee documentation"
+    tech_stack:
+      - "TypeScript"
+      - "Node.js"
+      - "React"
+      - "AWS"
+
+  - company: "JCPenney"
+    role: "Senior Data Engineer"
+    via: "through Globant"
+    location: "Remote"
+    start_date: "January 2024"
+    end_date: "January 2025"
+    description: |
+      Major American department store chain with over 650 locations and annual revenues exceeding $11 billion.
+    highlights:
+      - "Built the entire Marketing Technology data platform in-house, replacing an outsourced solution and significantly reducing data processing costs"
+      - "Enabled data ownership for JCP by migrating data, optimizing and fixing pipelines and dashboards"
+      - "Leveraged AWS EMR, Airflow, and Spark capabilities to deliver high-quality datasets for decision-making"
+      - "Responsible for daily development and maintenance of Big Data processing pipelines on AWS EMR"
+      - "Ingested data from various sources into Redshift for business intelligence and analytics"
+    tech_stack:
+      - "PySpark"
+      - "AWS EMR"
+      - "Airflow"
+      - "Redshift"
+      - "Marketing Tech"
+
+  - company: "Adobe"
+    role: "Data Engineer"
+    via: "through Globant"
+    location: "Remote"
+    start_date: "October 2022"
+    end_date: "December 2023"
+    description: |
+      Adobe Creative Cloud projects, supporting a global software leader serving millions of creative professionals worldwide with annual revenues over $17 billion.
+    highlights:
+      - "Part of team that migrated terabyte-scale data and processing from on-premises to AWS"
+      - "Participated in workload migration from on-premises (Hive, Cloudera, Trino, OOZIE) to Cloud (AWS EMR, S3, KDA, Quicksight)"
+      - "Utilized AWS EMR for processing data with S3 for storage and data lake purposes"
+    tech_stack:
+      - "AWS EMR"
+      - "S3"
+      - "Hive"
+      - "PySpark"
+      - "Trino"
+      - "Quicksight"
+
+  - company: "Banco Inter"
+    role: "Data Engineer"
+    via: "through Dadosfera"
+    location: "Brazil"
+    start_date: "March 2022"
+    end_date: "July 2022"
+    description: |
+      Leading digital bank in Brazil with millions of customers.
+    highlights:
+      - "Migrated SQL procedures to PySpark for scalable processing"
+      - "Processed data sent to S3 by Kafka's CDC platform in parquet format"
+      - "Curated and materialized data into Delta Tables"
+      - "Used Airflow to orchestrate ephemeral EMR cluster deployments"
+    tech_stack:
+      - "EMR"
+      - "S3"
+      - "PySpark"
+      - "Kafka"
+      - "Delta Lake"
+      - "Airflow"
+
+  - company: "Ciclic"
+    role: "Data Analyst"
+    location: "São Paulo, Brazil"
+    start_date: "July 2021"
+    end_date: "March 2022"
+    description: |
+      Brazilian financial services company focused on innovative insurance and investment solutions.
+    highlights:
+      - "Led implementation of data catalog tool enabling self-serve data analytics"
+      - "Developed ETL pipelines using Airflow from multiple sources (MySQL, RDS, S3, APIs) to Redshift"
+      - "Conducted data cleansing, transformation, and modeling using dbt"
+      - "CRM data analysis generated insights achieving 15x higher conversion rate on top campaigns"
+    tech_stack:
+      - "Airflow"
+      - "Redshift"
+      - "dbt"
+      - "Python"
+
+  - company: "Hamoye.com"
+    role: "Data Intern"
+    location: "Remote"
+    start_date: "July 2020"
+    end_date: "December 2020"
+    highlights:
+      - "Assisted in data cleaning and preprocessing to ensure data quality"
+      - "Collaborated with data science and engineering teams on ETL pipelines"
+      - "Performed ad-hoc data analysis and generated reports for business insights"
+      - "Automated repetitive data tasks through scripting"
+
+  - company: "Ilhasoft Tecnologia"
+    role: "NLP Junior Researcher"
+    location: "Brazil"
+    start_date: "May 2019"
+    end_date: "May 2020"
+    highlights:
+      - "Conducted Natural Language Processing research"
+
+  - company: "NEES - Núcleo de Excelência em Tecnologias Sociais"
+    role: "Graduate Research Assistant"
+    location: "Maceió, Brazil"
+    start_date: "June 2017"
+    end_date: "May 2019"
+    highlights:
+      - "Published research on International Conference (CSEDU) on the use of Educational Technologies in Medical Education"
+
+education:
+  - institution: "Universidade Federal de Alagoas"
+    degree: "Bachelor's Degree"
+    field: "Computer Science"
+    location: "Maceió, Brazil"
+
+  - institution: "XP Educação"
+    degree: "Bootcamp"
+    field: "Data Engineering Tools and Services"
+    dates: "April 2022 - July 2022"
+
+  - institution: "XP Educação"
+    degree: "Bootcamp"
+    field: "Data Science Tools and Services"
+    dates: "May 2021 - July 2021"
+
+certifications:
+  - name: "Databricks Certified Data Engineer Associate"
+    issuer: "Databricks"
+    icon: "databricks"
+
+  - name: "Applied Machine Learning in Python"
+    issuer: "University of Michigan"
+    icon: "python"
+
+  - name: "Applied Plotting, Charting & Data Representation in Python"
+    issuer: "University of Michigan"
+    icon: "chart"
+
+  - name: "C1 Level Cambridge English Certificate of Advanced English (CAE)"
+    issuer: "Cambridge Assessment English"
+    icon: "language"
+
+publications:
+  - title: "A Systematic Review on the Use of Educational Technologies for Medical Education"
+    venue: "CSEDU - International Conference on Computer Supported Education"
+    year: "2019"
+
+languages:
+  - name: "English"
+    level: "Native or Bilingual"
+  - name: "Portuguese"
+    level: "Native or Bilingual"
+  - name: "Spanish"
+    level: "Basic Reading"
+  - name: "Italian"
+    level: "Basic Reading"
+
+projects:
+  - name: "EU Data Platform - Zeekr"
+    description: "Building an EU-integrated data platform that unites scattered data sources into a single Databricks + Unity Catalog layer, ensuring compliance with the EU Data Act."
+    impact: "Enabling data governance and analytics across European operations"
+    tech:
+      - "Databricks"
+      - "Unity Catalog"
+      - "PySpark"
+      - "AWS"
+
+  - name: "Cloud Migration - Adobe"
+    description: "Led migration of terabyte-scale data processing from on-premises infrastructure to AWS cloud stack."
+    impact: "Reduced operational costs and improved scalability for millions of users"
+    tech:
+      - "AWS EMR"
+      - "S3"
+      - "Hive"
+      - "PySpark"
+
+  - name: "Marketing Technology Platform - JCPenney"
+    description: "Built the entire Marketing Technology data platform from scratch, replacing an expensive outsourced solution. Ingested data from various marketing sources into a unified platform."
+    impact: "Saved significant costs in data processing while enabling full data ownership for 650+ store locations"
+    tech:
+      - "PySpark"
+      - "AWS EMR"
+      - "Airflow"
+      - "Redshift"
+
+  - name: "CDC Data Platform - Banco Inter"
+    description: "Implemented Change Data Capture pipelines processing Kafka streams into Delta Tables for Brazil's leading digital bank."
+    impact: "Processing billions of transactions for millions of customers"
+    tech:
+      - "Kafka"
+      - "Delta Lake"
+      - "PySpark"
+      - "Airflow"
