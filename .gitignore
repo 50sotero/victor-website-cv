@@ -1,5 +1,5 @@
 # Meta-development folder (not for distribution)
-marge/*
+.marge/
 
 # Hugo build output
 public/

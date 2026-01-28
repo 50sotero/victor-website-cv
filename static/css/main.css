@@ -228,13 +228,165 @@ a:hover {
     padding-top: var(--header-height);
 }
 
-.particles-container {
+/* Mesh Gradient Background - Antigravity Style */
+.mesh-gradient-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
+    overflow: hidden;
+    background: var(--bg-primary);
+}
+
+.mesh-gradient-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(80px);
+    z-index: 2;
+}
+
+.gradient-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.7;
+    mix-blend-mode: normal;
+}
+
+[data-theme="dark"] .gradient-blob {
+    opacity: 0.5;
+}
+
+/* Blue blob */
+.gradient-blob-1 {
+    width: 40vmax;
+    height: 40vmax;
+    background: linear-gradient(135deg, #4285f4 0%, #1a73e8 50%, #174ea6 100%);
+    top: -10%;
+    left: -10%;
+    animation: blob-float-1 20s ease-in-out infinite;
+}
+
+/* Purple blob */
+.gradient-blob-2 {
+    width: 35vmax;
+    height: 35vmax;
+    background: linear-gradient(135deg, #a855f7 0%, #7c3aed 50%, #5b21b6 100%);
+    top: 60%;
+    right: -5%;
+    animation: blob-float-2 25s ease-in-out infinite;
+}
+
+/* Pink/Magenta blob */
+.gradient-blob-3 {
+    width: 30vmax;
+    height: 30vmax;
+    background: linear-gradient(135deg, #ec4899 0%, #db2777 50%, #be185d 100%);
+    bottom: -15%;
+    left: 30%;
+    animation: blob-float-3 22s ease-in-out infinite;
+}
+
+/* Orange blob - accent */
+.gradient-blob-4 {
+    width: 25vmax;
+    height: 25vmax;
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 50%, #ea580c 100%);
+    top: 20%;
+    right: 25%;
+    animation: blob-float-4 18s ease-in-out infinite;
+}
+
+/* Teal blob - accent */
+.gradient-blob-5 {
+    width: 28vmax;
+    height: 28vmax;
+    background: linear-gradient(135deg, var(--accent-tertiary) 0%, #0d9488 50%, #0f766e 100%);
+    bottom: 20%;
+    left: -5%;
+    animation: blob-float-5 23s ease-in-out infinite;
+}
+
+@keyframes blob-float-1 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    25% {
+        transform: translate(10%, 15%) scale(1.1) rotate(45deg);
+    }
+    50% {
+        transform: translate(5%, 25%) scale(0.95) rotate(90deg);
+    }
+    75% {
+        transform: translate(-5%, 10%) scale(1.05) rotate(135deg);
+    }
+}
+
+@keyframes blob-float-2 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    25% {
+        transform: translate(-15%, -10%) scale(1.15) rotate(-30deg);
+    }
+    50% {
+        transform: translate(-20%, 5%) scale(0.9) rotate(-60deg);
+    }
+    75% {
+        transform: translate(-5%, -15%) scale(1.1) rotate(-90deg);
+    }
+}
+
+@keyframes blob-float-3 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    33% {
+        transform: translate(15%, -20%) scale(1.2) rotate(60deg);
+    }
+    66% {
+        transform: translate(-10%, -10%) scale(0.85) rotate(120deg);
+    }
+}
+
+@keyframes blob-float-4 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    20% {
+        transform: translate(-20%, 10%) scale(1.1) rotate(20deg);
+    }
+    40% {
+        transform: translate(-30%, 25%) scale(0.9) rotate(40deg);
+    }
+    60% {
+        transform: translate(-10%, 30%) scale(1.15) rotate(60deg);
+    }
+    80% {
+        transform: translate(10%, 15%) scale(0.95) rotate(80deg);
+    }
+}
+
+@keyframes blob-float-5 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    25% {
+        transform: translate(20%, -15%) scale(1.1) rotate(-45deg);
+    }
+    50% {
+        transform: translate(30%, 5%) scale(0.9) rotate(-90deg);
+    }
+    75% {
+        transform: translate(10%, 20%) scale(1.05) rotate(-135deg);
+    }
 }
 
 .hero-content {
