@@ -15,7 +15,7 @@
     /* Fade settings */
     --particle-min-alpha: 0.1;
     --particle-max-alpha: 1.0;
-    --fade-easing: ease-in;
+    --fade-easing: 'ease-in';
 
     /* Initial position (center of screen) */
     --ring-x: 50;
