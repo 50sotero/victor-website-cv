@@ -23,6 +23,9 @@
 
     /* Animation tick for rotation/pulse effects */
     --animation-tick: 0;
+
+    /* Seed for randomization */
+    --seed: 12345;
 }
 
 /* Dark theme colors */
@@ -53,13 +56,6 @@
 
 /* Hide cursor effect on small screens for performance */
 @media (max-width: 768px) {
-    #cursor-area {
-        display: none;
-    }
-}
-
-/* Fallback for browsers without CSS Houdini support */
-@supports not (background-image: paint(ring-particles)) {
     #cursor-area {
         display: none;
     }
