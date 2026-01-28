@@ -1,0 +1,66 @@
+/* Ring Particles CSS - Antigravity Style Cursor Effect */
+/* Using CSS Houdini paint worklet: ring-particles */
+
+:root {
+    /* Ring configuration */
+    --ring-radius: 120;
+    --ring-thickness: 120;
+    --particle-count: 90;
+    --particle-rows: 35;
+    --particle-size: 2;
+
+    /* Colors - matches site accent */
+    --particle-color: #00d2ff;
+
+    /* Fade settings */
+    --particle-min-alpha: 0.1;
+    --particle-max-alpha: 1.0;
+    --fade-easing: ease-in;
+
+    /* Initial position (center of screen) */
+    --ring-x: 50;
+    --ring-y: 50;
+
+    /* Animation tick for rotation/pulse effects */
+    --animation-tick: 0;
+}
+
+/* Dark theme colors */
+[data-theme="dark"] {
+    --particle-color: #00d2ff;
+    --particle-max-alpha: 0.8;
+}
+
+/* Light theme colors */
+[data-theme="light"] {
+    --particle-color: #ea580c;
+    --particle-max-alpha: 0.6;
+}
+
+/* Cursor area - full screen overlay */
+#cursor-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    background-image: paint(ring-particles);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Hide cursor effect on small screens for performance */
+@media (max-width: 768px) {
+    #cursor-area {
+        display: none;
+    }
+}
+
+/* Fallback for browsers without CSS Houdini support */
+@supports not (background-image: paint(ring-particles)) {
+    #cursor-area {
+        display: none;
+    }
+}
