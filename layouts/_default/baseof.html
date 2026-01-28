@@ -20,7 +20,6 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/ring-particles.css">
 
     <script>
         (function () {
@@ -35,9 +34,6 @@
 </head>
 
 <body>
-    <!-- Ring Particles Cursor Effect -->
-    <div id="cursor-area"></div>
-
     {{ partial "header.html" . }}
 
     <!-- Global Floating Tech Icons (Official Simple Icons) -->
@@ -120,18 +116,8 @@
 
     {{ partial "footer.html" . }}
 
-    <script>
-        (async function () {
-            if (!('paintWorklet' in CSS)) {
-                await import('https://unpkg.com/css-paint-polyfill');
-            }
-            CSS.paintWorklet.addModule(
-                'https://unpkg.com/css-houdini-ringparticles/dist/ringparticles.js'
-            );
-        })();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.12.0/tsparticles.slim.bundle.min.js"></script>
     <script src="/js/main.js"></script>
-    <script src="/js/cursor-effect.js"></script>
 </body>
 
 </html>
