@@ -32,7 +32,7 @@ A modern, responsive portfolio website and CV for Victor Sotero, Senior Data Eng
 
 ```bash
 # Clone the repository
-git clone https://github.com/victorsotero/victor-website-cv.git
+git clone https://github.com/50sotero/victor-website-cv.git
 cd victor-website-cv
 
 # Install formatting dependencies (optional)
