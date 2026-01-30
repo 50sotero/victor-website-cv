@@ -1,7 +1,7 @@
 personal:
   name: "Victor Sotero"
   title: "Senior Data Engineer"
-  tagline: "Big Data | AI | Python | SQL | AWS | Spark | Data Lakehouse"
+  tagline: "Databricks | Big Data | AI | Python | SQL | AWS | Spark | Data Lakehouse"
   location: "Gothenburg, Sweden"
   email: "victorvcdb@gmail.com"
   phone: "+460760029014"
@@ -66,6 +66,7 @@ skills:
 
 experience:
   - company: "Zeekr Technology Europe"
+    website: "https://zeekr.eu"
     role: "Senior Data Engineer"
     via: "through Software by Quokka"
     location: "Gothenburg, Sweden"
@@ -89,6 +90,7 @@ experience:
       - "NoSQL"
 
   - company: "Software by Quokka"
+    website: "https://www.softwarebyquokka.se/"
     role: "Senior Data Engineer"
     location: "Greater Gothenburg Metropolitan Area"
     start_date: "January 2025"
@@ -106,6 +108,7 @@ experience:
       - "AWS"
 
   - company: "JCPenney"
+    website: "https://www.jcpenney.com"
     role: "Senior Data Engineer"
     via: "through Globant"
     location: "Remote"
@@ -127,6 +130,7 @@ experience:
       - "Marketing Tech"
 
   - company: "Adobe"
+    website: "https://www.adobe.com"
     role: "Data Engineer"
     via: "through Globant"
     location: "Remote"
@@ -147,6 +151,7 @@ experience:
       - "Quicksight"
 
   - company: "Banco Inter"
+    website: "https://www.bancointer.com.br"
     role: "Data Engineer"
     via: "through Dadosfera"
     location: "Brazil"
@@ -168,6 +173,7 @@ experience:
       - "Airflow"
 
   - company: "Ciclic"
+    website: "https://www.ciclic.com.br"
     role: "Data Analyst"
     location: "São Paulo, Brazil"
     start_date: "July 2021"
@@ -196,13 +202,15 @@ experience:
       - "Performed ad-hoc data analysis and generated reports for business insights"
       - "Automated repetitive data tasks through scripting"
 
-  - company: "Ilhasoft Tecnologia"
+  - company: "Ilhasoft Tecnologia (now Weni)"
     role: "NLP Junior Researcher"
     location: "Brazil"
     start_date: "May 2019"
     end_date: "May 2020"
     highlights:
-      - "Conducted Natural Language Processing research"
+      - "Conducted Natural Language Processing research focusing on chatbot interactions"
+      - "Developed and evaluated models using Python and NLP libraries"
+      - "Collaborated on refining conversational flows for Weni's platform"
 
   - company: "NEES - Núcleo de Excelência em Tecnologias Sociais"
     role: "Graduate Research Assistant"
@@ -247,6 +255,7 @@ certifications:
 
 publications:
   - title: "A Systematic Review on the Use of Educational Technologies for Medical Education"
+    url: "https://www.scitepress.org/Link.aspx?doi=10.5220/0007678501530160"
     venue: "CSEDU - International Conference on Computer Supported Education"
     year: "2019"
 
@@ -262,24 +271,33 @@ languages:
 
 projects:
   - name: "EU Data Platform - Zeekr"
+    url: "https://zeekr.eu"
     description: "Building an EU-integrated data platform that unites scattered data sources into a single Databricks + Unity Catalog layer, ensuring compliance with the EU Data Act."
     impact: "Enabling data governance and analytics across European operations"
     tech:
       - "Databricks"
       - "Unity Catalog"
       - "PySpark"
+      - "Terraform"
+      - "GitHub Actions"
+      - "SQL"
       - "AWS"
 
   - name: "Cloud Migration - Adobe"
-    description: "Led migration of terabyte-scale data processing from on-premises infrastructure to AWS cloud stack."
+    url: "https://www.adobe.com"
+    description: "Engineered the migration of terabyte-scale big data workloads from legacy on-premises infrastructure (Cloudera, Hive, Oozie) to a modern AWS cloud architecture. Optimized data pipelines for cost and performance."
     impact: "Reduced operational costs and improved scalability for millions of users"
     tech:
       - "AWS EMR"
       - "S3"
       - "Hive"
       - "PySpark"
+      - "AWS Glue"
+      - "Terraform"
+      - "SQL"
 
   - name: "Marketing Technology Platform - JCPenney"
+    url: "https://www.jcpenney.com"
     description: "Built the entire Marketing Technology data platform from scratch, replacing an expensive outsourced solution. Ingested data from various marketing sources into a unified platform."
     impact: "Saved significant costs in data processing while enabling full data ownership for 650+ store locations"
     tech:
@@ -287,12 +305,18 @@ projects:
       - "AWS EMR"
       - "Airflow"
       - "Redshift"
+      - "Python"
+      - "SQL"
+      - "Terraform"
 
   - name: "CDC Data Platform - Banco Inter"
-    description: "Implemented Change Data Capture pipelines processing Kafka streams into Delta Tables for Brazil's leading digital bank."
-    impact: "Processing billions of transactions for millions of customers"
+    url: "https://www.bancointer.com.br"
+    description: "Acted as a Data Engineer on projects within Banco Inter, migrating SQL procedures to PySpark to scale processing for Brazil's leading digital bank. Utilized EMR, S3, PySpark, Kafka, Delta Lake, and Airflow to build robust data pipelines."
+    impact: "Processing billions of transactions for millions of customers by migrating legacy procedures to scalable PySpark workflows"
     tech:
       - "Kafka"
       - "Delta Lake"
       - "PySpark"
       - "Airflow"
+      - "Spark Streaming"
+      - "AWS EMR"

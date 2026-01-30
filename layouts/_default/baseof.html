@@ -31,9 +31,25 @@
             }
         })();
     </script>
+
+    <!-- Ring Particles Cursor Effect Worklet -->
+    <script>
+        (async function () {
+            if (!('paintWorklet' in CSS)) {
+                await import('https://unpkg.com/css-paint-polyfill');
+            }
+            CSS.paintWorklet.addModule(
+                'https://unpkg.com/css-houdini-ringparticles/dist/ringparticles.js'
+            );
+        })();
+    </script>
 </head>
 
 <body>
+    <!-- Ring Particles Cursor Effect Overlay -->
+    <div id="cursor-area"></div>
+    <div id="particles-js" class="particles-container"></div>
+
     {{ partial "header.html" . }}
 
     <!-- Global Floating Tech Icons (Official Simple Icons) -->
@@ -117,7 +133,7 @@
     {{ partial "footer.html" . }}
 
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.12.0/tsparticles.slim.bundle.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
 </body>
 
 </html>
