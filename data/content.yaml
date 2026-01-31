@@ -227,12 +227,12 @@ education:
     location: "Maceió, Brazil"
 
   - institution: "XP Educação"
-    degree: "Bootcamp"
+    degree: "Post-graduate Course"
     field: "Data Engineering Tools and Services"
     dates: "April 2022 - July 2022"
 
   - institution: "XP Educação"
-    degree: "Bootcamp"
+    degree: "Post-graduate Course"
     field: "Data Science Tools and Services"
     dates: "May 2021 - July 2021"
 
