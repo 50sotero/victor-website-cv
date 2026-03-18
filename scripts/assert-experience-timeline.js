@@ -60,7 +60,11 @@ function countTags(attrs) {
 }
 
 const quokkaAnchor = indexOfOrThrow(
-  { 'data-consulting-group': 'software by quokka', 'data-timeline-kind': 'anchor' },
+  {
+    'data-consulting-group': 'software by quokka',
+    'data-timeline-kind': 'anchor',
+    'data-connector-direction': 'down',
+  },
   'Software by Quokka anchor'
 );
 const zeekrChild = indexOfOrThrow(
@@ -74,7 +78,11 @@ const zeekrChild = indexOfOrThrow(
 assert.ok(quokkaAnchor < zeekrChild, 'Expected Software by Quokka anchor before Zeekr child');
 
 const globantAnchor = indexOfOrThrow(
-  { 'data-consulting-group': 'globant', 'data-timeline-kind': 'anchor' },
+  {
+    'data-consulting-group': 'globant',
+    'data-timeline-kind': 'anchor',
+    'data-connector-direction': 'down',
+  },
   'Globant anchor'
 );
 const jcpenneyChild = indexOfOrThrow(
@@ -94,7 +102,11 @@ const adobeChild = indexOfOrThrow(
   'Adobe child'
 );
 indexOfOrThrow(
-  { 'data-consulting-group': 'dadosfera', 'data-timeline-kind': 'anchor' },
+  {
+    'data-consulting-group': 'dadosfera',
+    'data-timeline-kind': 'anchor',
+    'data-connector-direction': 'down',
+  },
   'Dadosfera anchor'
 );
 
@@ -102,12 +114,27 @@ assert.ok(globantAnchor < jcpenneyChild, 'Expected Globant anchor before JCPenne
 assert.ok(jcpenneyChild < adobeChild, 'Expected Globant children to preserve source order');
 
 assert.equal(
-  countTags({ 'data-consulting-group': 'software by quokka', 'data-timeline-kind': 'anchor' }),
+  countTags({
+    'data-consulting-group': 'software by quokka',
+    'data-timeline-kind': 'anchor',
+    'data-connector-direction': 'down',
+  }),
   1
 );
-assert.equal(countTags({ 'data-consulting-group': 'globant', 'data-timeline-kind': 'anchor' }), 1);
 assert.equal(
-  countTags({ 'data-consulting-group': 'dadosfera', 'data-timeline-kind': 'anchor' }),
+  countTags({
+    'data-consulting-group': 'globant',
+    'data-timeline-kind': 'anchor',
+    'data-connector-direction': 'down',
+  }),
+  1
+);
+assert.equal(
+  countTags({
+    'data-consulting-group': 'dadosfera',
+    'data-timeline-kind': 'anchor',
+    'data-connector-direction': 'down',
+  }),
   1
 );
 
