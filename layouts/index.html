@@ -1,4 +1,5 @@
-{{ define "main" }} {{ $content := .Site.Data.content }}
+{{ define "main" }} {{ $content := .Site.Data.content }} {{ $whatsapp := $content.personal.whatsapp
+}}
 
 <!-- Hero Section -->
 <section class="hero" id="hero">
@@ -682,27 +683,56 @@
           <span class="contact-link-value">{{ $content.personal.email }}</span>
         </div>
       </a>
-      <a href="tel:{{ $content.personal.phone }}" class="contact-link">
-        <div class="contact-link-icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-            ></path>
-          </svg>
+      {{ with $whatsapp }}
+      <div class="contact-link contact-link-group contact-link-whatsapp">
+        <div class="contact-link-whatsapp-rows">
+          {{ range $number := .numbers }}
+          <div class="contact-link-whatsapp-row">
+            <span class="contact-link-whatsapp-row-icon" aria-hidden="true">
+              <svg
+                class="contact-link-whatsapp-glyph"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 720 720"
+                fill="none"
+              >
+                <path
+                  fill="currentColor"
+                  d="M360,0C161.18,0,0,161.18,0,360c0,65.41,17.45,126.75,47.94,179.61L0,720l187.02-44.21c51.34,28.18,110.28,44.21,172.98,44.21,198.82,0,360-161.18,360-360S558.82,0,360,0ZM360,655.52c-60.17,0-116.13-17.98-162.82-48.87l-110.49,28.14,30.99-105.61c-33.53-47.93-53.2-106.26-53.2-169.19,0-163.21,132.31-295.52,295.52-295.52s295.52,132.31,295.52,295.52-132.31,295.52-295.52,295.52Z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M444.35,407.52l87.1,41.06c4,1.88,6.56,5.94,6.2,10.34-.94,11.46-5.54,34.43-26.13,55.02-58.12,58.12-162.49-7.64-166.74-10.18-25.67-13.79-50.06-32.24-73.19-55.36-23.12-23.12-41.58-47.52-55.37-73.19-2.55-4.24-68.31-108.61-10.18-166.74,20.59-20.59,43.56-25.19,55.02-26.13,4.41-.36,8.46,2.2,10.34,6.2l41.07,87.1c1.94,4.12,1.09,9.02-2.13,12.24l-30.61,30.61c-6.62,6.62-8.56,16.93-4,25.11,11.17,20.03,26.19,39.32,43.59,57.07,17.75,17.4,37.04,32.43,57.07,43.59,8.18,4.56,18.48,2.62,25.11-4l30.61-30.61c3.22-3.22,8.12-4.08,12.24-2.13Z"
+                />
+              </svg>
+              <svg
+                class="contact-link-phone-glyph"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+            </span>
+            <span
+              class="contact-link-whatsapp-flag {{ if eq $number.label "Sweden" }}contact-link-whatsapp-flag--sweden{{ else }}contact-link-whatsapp-flag--brazil{{ end }}"
+              aria-hidden="true"
+            ></span>
+            <a href="tel:{{ $number.tel }}" class="contact-link-whatsapp-entry">{{ $number.label }} {{ $number.display }}</a>
+          </div>
+          {{ end }}
         </div>
-        <div class="contact-link-text">
-          <span class="contact-link-label">Phone</span>
-          <span class="contact-link-value">{{ $content.personal.phone }}</span>
-        </div>
-      </a>
+      </div>
+      {{ end }}
       <a
         href="{{ $content.personal.linkedin }}"
         target="_blank"
