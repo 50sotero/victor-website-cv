@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "hugo server -D --disableFastRender",
     "build": "hugo --gc --minify",
+    "generate:cv-variants": "python3 scripts/generate_cv_variants.py",
     "test:timeline": "npm run build && node scripts/assert-experience-timeline.js",
     "format": "prettier --write \"layouts/**/*.html\" \"static/**/*.{css,js}\"",
     "format:check": "prettier --check \"layouts/**/*.html\" \"static/**/*.{css,js}\""
