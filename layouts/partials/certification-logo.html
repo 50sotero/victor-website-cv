@@ -1,0 +1,17 @@
+{{- $icon := default "certificate" .icon -}} {{- $base := default "certification-logo" .base -}} {{-
+$extra := default "" .extra -}}
+<span
+  class="{{ with $extra }}{{ . }} {{ end }}{{ $base }} {{ $base }}--{{ $icon }}"
+  data-certification-icon="{{ $icon }}"
+  aria-hidden="true"
+>
+  {{- if or (eq $icon "anthropic") (eq $icon "databricks") -}}
+  <span class="{{ $base }}__mask {{ $base }}__mask--{{ $icon }}"></span>
+  {{- else if eq $icon "university" -}}
+  <span class="{{ $base }}__lettermark {{ $base }}__lettermark--university">M</span>
+  {{- else if eq $icon "cambridge" -}}
+  <span class="{{ $base }}__lettermark {{ $base }}__lettermark--cambridge">C1</span>
+  {{- else -}}
+  <span class="{{ $base }}__lettermark">{{ upper (substr $icon 0 1) }}</span>
+  {{- end -}}
+</span>
