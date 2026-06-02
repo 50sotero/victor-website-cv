@@ -17,7 +17,7 @@ personal:
   github: 'https://github.com/50sotero'
 
 summary: |
-  As a seasoned Data Engineer with over five years of experience developing scalable and reliable big data solutions, I am based in Gothenburg, Sweden, working as a Senior Data Engineer through Software by Quokka with Geely Technology Europe. Software by Quokka is a high-end software engineering firm offering services to leading enterprises in sectors such as automotive, telecom, MedTech, and FinTech.
+  As a seasoned Data Engineer with over five years of experience developing scalable and reliable big data solutions, I am based in Gothenburg, Sweden, working as a Senior Data Engineer through Software by Quokka with Geely Technology Europe after a Zeekr Technology Europe engagement from April 2025 to May 2026. Software by Quokka is a high-end software engineering firm offering services to leading enterprises in sectors such as automotive, telecom, MedTech, and FinTech.
 
   Previously, at Globant, I played a pivotal role in designing, implementing and optimizing data workflows for major clients, leading to improved data processing efficiency and reduced operational costs. My work supported critical business functions and enabled data-driven decision-making in large-scale enterprises.
 
@@ -78,10 +78,32 @@ experience:
     role: 'Senior Data Engineer'
     via: 'through Software by Quokka'
     location: 'Gothenburg, Sweden'
-    start_date: 'April 2025'
+    start_date: 'May 2026'
     end_date: 'Present'
     description: |
-      Geely Technology Europe is Geely Auto Group's unified European R&D organization, evolved from Zeekr Technology Europe in Gothenburg and integrating engineering hubs across Sweden and Germany.
+      Geely Technology Europe is Geely Auto Group's unified European R&D organization, integrating engineering hubs across Sweden and Germany after the evolution of Zeekr Technology Europe.
+    highlights:
+      - 'Continuing the EU-integrated data platform work across Geely Technology Europe operations'
+      - 'Evolving Databricks + Unity Catalog data products from PoC and stakeholder demos into production solutions'
+      - 'Designing and orchestrating governed pipelines that ingest, canonicalize, and serve data back to users and markets'
+    tech_stack:
+      - 'PySpark'
+      - 'Delta Lake'
+      - 'Databricks'
+      - 'AWS'
+      - 'Redshift'
+      - 'MySQL'
+      - 'NoSQL'
+
+  - company: 'Zeekr Technology Europe'
+    website: 'https://zeekrtech.eu/'
+    role: 'Senior Data Engineer'
+    via: 'through Software by Quokka'
+    location: 'Gothenburg, Sweden'
+    start_date: 'April 2025'
+    end_date: 'May 2026'
+    description: |
+      Zeekr Technology Europe was Geely's Gothenburg-based European R&D organization before becoming part of Geely Technology Europe.
     highlights:
       - 'Building an EU-integrated data platform uniting scattered sources into a single Databricks + Unity Catalog layer'
       - 'Aligning customer-data flows with the EU Data Act compliance requirements'
@@ -247,11 +269,11 @@ education:
 certifications:
   - name: 'Claude Code in Action'
     issuer: 'Anthropic'
-    icon: 'ai'
+    icon: 'anthropic'
 
   - name: 'Introduction to Model Context Protocol'
     issuer: 'Anthropic'
-    icon: 'ai'
+    icon: 'anthropic'
 
   - name: 'Databricks Certified Data Engineer Associate'
     issuer: 'Databricks'
@@ -259,15 +281,15 @@ certifications:
 
   - name: 'Applied Machine Learning in Python'
     issuer: 'University of Michigan'
-    icon: 'python'
+    icon: 'university'
 
   - name: 'Applied Plotting, Charting & Data Representation in Python'
     issuer: 'University of Michigan'
-    icon: 'chart'
+    icon: 'university'
 
   - name: 'C1 Level Cambridge English Certificate of Advanced English (CAE)'
     issuer: 'Cambridge Assessment English'
-    icon: 'language'
+    icon: 'cambridge'
 
 publications:
   - title: 'A Systematic Review on the Use of Educational Technologies for Medical Education'
@@ -286,9 +308,9 @@ languages:
     level: 'Basic Reading'
 
 projects:
-  - name: 'EU Data Platform - Geely Technology Europe'
+  - name: 'EU Data Platform - Zeekr & Geely Technology Europe'
     url: 'https://www.geelytech.eu/en'
-    description: 'Building an EU-integrated data platform that unites scattered data sources into a single Databricks + Unity Catalog layer, ensuring compliance with the EU Data Act across European operations.'
+    description: 'Building an EU-integrated data platform that started under Zeekr Technology Europe and continues under Geely Technology Europe, uniting scattered data sources into a single Databricks + Unity Catalog layer and ensuring compliance with the EU Data Act across European operations.'
     impact: 'Enabling data governance and analytics across European operations'
     tech:
       - 'Databricks'

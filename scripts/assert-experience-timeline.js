@@ -43,6 +43,13 @@ function extractExperienceSection(sourceHtml) {
   return htmlAfterExperience.slice(0, projectsBoundary);
 }
 
+function normalizedText(sourceHtml) {
+  return sourceHtml
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function indexOfTag(attrs) {
   const match = tagRegex(attrs, 'i').exec(experienceHtml);
   return match ? match.index : -1;
@@ -75,9 +82,28 @@ const geelyChild = indexOfOrThrow(
   },
   'Geely Technology Europe child'
 );
+const zeekrChild = indexOfOrThrow(
+  {
+    'data-consulting-group': 'software by quokka',
+    'data-timeline-kind': 'child',
+    'data-company': 'Zeekr Technology Europe',
+  },
+  'Zeekr Technology Europe child'
+);
 assert.ok(
   quokkaAnchor < geelyChild,
   'Expected Software by Quokka anchor before Geely Technology Europe child'
+);
+assert.ok(geelyChild < zeekrChild, 'Expected current Geely role before prior Zeekr role');
+
+const experienceText = normalizedText(experienceHtml);
+assert.ok(
+  experienceText.includes('May 2026 - Present'),
+  'Expected Geely Technology Europe date range to render'
+);
+assert.ok(
+  experienceText.includes('April 2025 - May 2026'),
+  'Expected Zeekr Technology Europe date range to render'
 );
 
 const globantAnchor = indexOfOrThrow(
@@ -145,4 +171,9 @@ assert.equal(
   countTags({ 'data-company': 'Geely Technology Europe' }),
   1,
   'Expected Geely Technology Europe to render once'
+);
+assert.equal(
+  countTags({ 'data-company': 'Zeekr Technology Europe' }),
+  1,
+  'Expected Zeekr Technology Europe to render once'
 );
