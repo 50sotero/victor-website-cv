@@ -584,22 +584,8 @@
         <div class="certifications-list">
           {{ range $content.certifications }}
           <div class="certification-card">
-            <div class="certification-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="12" cy="8" r="7"></circle>
-                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-              </svg>
-            </div>
+            {{ partial "certification-logo.html" (dict "icon" .icon "base" "certification-logo"
+            "extra" "certification-icon") }}
             <div class="certification-info">
               <h4 class="certification-name">{{ .name }}</h4>
               <p class="certification-issuer">{{ .issuer }}</p>
@@ -686,7 +672,8 @@
       {{ with $whatsapp }}
       <div class="contact-link contact-link-group contact-link-whatsapp">
         <div class="contact-link-whatsapp-rows">
-          {{ range $number := .numbers }}
+          {{ range $number := .numbers }} {{ $flagClass := cond (eq $number.label "Sweden")
+          "contact-link-whatsapp-flag--sweden" "contact-link-whatsapp-flag--brazil" }}
           <div class="contact-link-whatsapp-row">
             <span class="contact-link-whatsapp-row-icon" aria-hidden="true">
               <svg
@@ -723,11 +710,10 @@
                 ></path>
               </svg>
             </span>
-            <span
-              class="contact-link-whatsapp-flag {{ if eq $number.label "Sweden" }}contact-link-whatsapp-flag--sweden{{ else }}contact-link-whatsapp-flag--brazil{{ end }}"
-              aria-hidden="true"
-            ></span>
-            <a href="tel:{{ $number.tel }}" class="contact-link-whatsapp-entry">{{ $number.label }} {{ $number.display }}</a>
+            <span class="contact-link-whatsapp-flag {{ $flagClass }}" aria-hidden="true"></span>
+            <a href="tel:{{ $number.tel }}" class="contact-link-whatsapp-entry">
+              {{ $number.label }} {{ $number.display }}
+            </a>
           </div>
           {{ end }}
         </div>
