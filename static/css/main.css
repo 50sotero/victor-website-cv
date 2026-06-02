@@ -978,6 +978,48 @@ a:hover {
   background: var(--bg-tertiary);
   border-radius: 10px;
   color: var(--accent-primary);
+  flex-shrink: 0;
+  border: 1px solid var(--border-color);
+}
+
+.certification-logo__mask {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: currentColor;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.certification-logo__mask--anthropic {
+  -webkit-mask-image: url('/images/icons/anthropic.svg');
+  mask-image: url('/images/icons/anthropic.svg');
+}
+
+.certification-logo__mask--databricks {
+  -webkit-mask-image: url('/images/icons/databricks.svg');
+  mask-image: url('/images/icons/databricks.svg');
+}
+
+.certification-logo__lettermark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 25px;
+  height: 25px;
+  color: currentColor;
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.certification-logo__lettermark--cambridge {
+  letter-spacing: -0.08em;
 }
 
 .certification-name {

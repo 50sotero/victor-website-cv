@@ -490,6 +490,68 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.cv-certification-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.cv-certification-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-card);
+  color: var(--accent);
+}
+
+.cv-certification-logo__mask {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: currentColor;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.cv-certification-logo__mask--anthropic {
+  -webkit-mask-image: url('/images/icons/anthropic.svg');
+  mask-image: url('/images/icons/anthropic.svg');
+}
+
+.cv-certification-logo__mask--databricks {
+  -webkit-mask-image: url('/images/icons/databricks.svg');
+  mask-image: url('/images/icons/databricks.svg');
+}
+
+.cv-certification-logo__lettermark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 15px;
+  height: 15px;
+  font-size: 0.58rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.cv-certification-logo__lettermark--cambridge {
+  letter-spacing: -0.08em;
+}
+
+.cv-certification-content {
+  min-width: 0;
+}
+
 .cv-sidebar-entry:last-child {
   margin-bottom: 0;
 }
@@ -954,6 +1016,38 @@ a:hover {
 
   .cv-sidebar-entry {
     margin-bottom: 8px !important;
+  }
+
+  .cv-certification-entry {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 5px !important;
+  }
+
+  .cv-certification-logo {
+    flex: 0 0 22px !important;
+    width: 22px !important;
+    height: 22px !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 6px !important;
+    background: var(--bg-card) !important;
+    color: var(--accent) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .cv-certification-logo__mask {
+    width: 12px !important;
+    height: 12px !important;
+    background: currentColor !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .cv-certification-logo__lettermark {
+    min-width: 12px !important;
+    height: 12px !important;
+    font-size: 7px !important;
   }
 
   .cv-sidebar-entry-title {
