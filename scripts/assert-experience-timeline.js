@@ -67,15 +67,18 @@ const quokkaAnchor = indexOfOrThrow(
   },
   'Software by Quokka anchor'
 );
-const zeekrChild = indexOfOrThrow(
+const geelyChild = indexOfOrThrow(
   {
     'data-consulting-group': 'software by quokka',
     'data-timeline-kind': 'child',
-    'data-company': 'Zeekr Technology Europe',
+    'data-company': 'Geely Technology Europe',
   },
-  'Zeekr child'
+  'Geely Technology Europe child'
 );
-assert.ok(quokkaAnchor < zeekrChild, 'Expected Software by Quokka anchor before Zeekr child');
+assert.ok(
+  quokkaAnchor < geelyChild,
+  'Expected Software by Quokka anchor before Geely Technology Europe child'
+);
 
 const globantAnchor = indexOfOrThrow(
   {
@@ -139,7 +142,7 @@ assert.equal(
 );
 
 assert.equal(
-  countTags({ 'data-company': 'Zeekr Technology Europe' }),
+  countTags({ 'data-company': 'Geely Technology Europe' }),
   1,
-  'Expected Zeekr to render once'
+  'Expected Geely Technology Europe to render once'
 );

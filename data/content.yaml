@@ -1,7 +1,7 @@
 personal:
   name: 'Victor Sotero'
   title: 'Senior Data Engineer'
-  tagline: 'Databricks | Big Data | AI | Python | SQL | AWS | Spark | Data Lakehouse'
+  tagline: 'Databricks | Big Data | AI | Python | SQL | AWS | Spark | Data Lakehouse | MCP'
   location: 'Gothenburg, Sweden'
   email: 'victorvcdb@gmail.com'
   whatsapp:
@@ -17,7 +17,7 @@ personal:
   github: 'https://github.com/50sotero'
 
 summary: |
-  As a seasoned Data Engineer with over four years of experience in developing scalable and reliable big data solutions, I have relocated to Gothenburg, Sweden, to join Software by Quokka. This high-end software engineering firm offers services to leading enterprises in sectors such as automotive, telecom, MedTech, and FinTech.
+  As a seasoned Data Engineer with over five years of experience developing scalable and reliable big data solutions, I am based in Gothenburg, Sweden, working as a Senior Data Engineer through Software by Quokka with Geely Technology Europe. Software by Quokka is a high-end software engineering firm offering services to leading enterprises in sectors such as automotive, telecom, MedTech, and FinTech.
 
   Previously, at Globant, I played a pivotal role in designing, implementing and optimizing data workflows for major clients, leading to improved data processing efficiency and reduced operational costs. My work supported critical business functions and enabled data-driven decision-making in large-scale enterprises.
 
@@ -73,15 +73,15 @@ skills:
         level: 90
 
 experience:
-  - company: 'Zeekr Technology Europe'
-    website: 'https://zeekr.eu'
+  - company: 'Geely Technology Europe'
+    website: 'https://www.geelytech.eu/en'
     role: 'Senior Data Engineer'
     via: 'through Software by Quokka'
     location: 'Gothenburg, Sweden'
     start_date: 'April 2025'
     end_date: 'Present'
     description: |
-      Zeekr is Geely's premium EV brand expanding across Europe, with EU HQ in Amsterdam and an R&D/design hub at the Uni3 campus in Gothenburg.
+      Geely Technology Europe is Geely Auto Group's unified European R&D organization, evolved from Zeekr Technology Europe in Gothenburg and integrating engineering hubs across Sweden and Germany.
     highlights:
       - 'Building an EU-integrated data platform uniting scattered sources into a single Databricks + Unity Catalog layer'
       - 'Aligning customer-data flows with the EU Data Act compliance requirements'
@@ -245,6 +245,14 @@ education:
     dates: 'May 2021 - July 2021'
 
 certifications:
+  - name: 'Claude Code in Action'
+    issuer: 'Anthropic'
+    icon: 'ai'
+
+  - name: 'Introduction to Model Context Protocol'
+    issuer: 'Anthropic'
+    icon: 'ai'
+
   - name: 'Databricks Certified Data Engineer Associate'
     issuer: 'Databricks'
     icon: 'databricks'
@@ -278,9 +286,9 @@ languages:
     level: 'Basic Reading'
 
 projects:
-  - name: 'EU Data Platform - Zeekr'
-    url: 'https://zeekr.eu'
-    description: 'Building an EU-integrated data platform that unites scattered data sources into a single Databricks + Unity Catalog layer, ensuring compliance with the EU Data Act.'
+  - name: 'EU Data Platform - Geely Technology Europe'
+    url: 'https://www.geelytech.eu/en'
+    description: 'Building an EU-integrated data platform that unites scattered data sources into a single Databricks + Unity Catalog layer, ensuring compliance with the EU Data Act across European operations.'
     impact: 'Enabling data governance and analytics across European operations'
     tech:
       - 'Databricks'
